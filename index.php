@@ -9,6 +9,11 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="./js/script.js" type="text/javascript"></script>
+<div id="app">
+    <div class="m-5">
+<div v-for="(item, index) in todoList" :key="index" class="m-1" >{{item}}</div>
+</div>
+</div>
+    <script src="script.js" type="text/javascript"></script>
 </body>
 </html>
