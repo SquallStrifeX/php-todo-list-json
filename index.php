@@ -13,6 +13,18 @@
     <div class="m-5">
 <div v-for="(item, index) in todoList" :key="index" class="m-1" >{{item}}</div>
 </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+               <input class="form-control" @keyup.enter="updateTodoList" type="text" placeholder="Inserisci nuovo personaggio" v-model="todoItem"> 
+            </div>
+            <div class="col-6">
+                <button class="btn btn-success" type="button" id="save-todo" @click="updateTodoList">Invia</button>
+            </div>
+    </div>
+
+
+</form>
 </div>
     <script src="script.js" type="text/javascript"></script>
 </body>
